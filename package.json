@@ -14,7 +14,8 @@
     "start": "npm start",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -f -d public"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -49,6 +50,7 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "prettier": "2.2.1"
   },
   "repository": {

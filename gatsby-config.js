@@ -9,6 +9,7 @@ module.exports = {
     title: `ASD Screen - Q-CHAT-10`,
     author: `ACRI`
   },
+  pathPrefix: "/ASMPH-ACRI-ASDSCREEN-Q-CHAT-10",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
