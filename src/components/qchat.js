@@ -1,5 +1,5 @@
 import React from "react"
-import Questionnaire from "../components/questionnaire";
+import Questionnaire from "./questionnaire";
 import ShowResult from "./show-result";
 import questionFields from "../assets/FIELDS/question-fields.json";
 

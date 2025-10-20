@@ -1,7 +1,7 @@
 import React from "react"
 import PatientInfo from "./patient-info";
 import patientInfoFields from "../assets/FIELDS/patient-info-fields.json";
-import SetLanguageAudioMain from "../components/set-language-audio-main"
+import SetLanguageAudioMain from "./set-language-audio-main"
 
 export default function SetLanguageAudio(props) {
     const startTest = (currentLanguage) => {
