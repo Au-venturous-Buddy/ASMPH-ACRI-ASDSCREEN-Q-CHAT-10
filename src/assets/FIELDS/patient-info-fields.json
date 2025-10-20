@@ -1,0 +1,66 @@
+{
+    "English": {
+        "language_code": "en",
+        "field_names": {
+            "instructions": {
+                "text": "A quick referral guide for parents to complete about their toddler (18-24 months) with concerns about autism. For each item, please select the response which best applies to your child.",
+                "audio": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1405592167%3Fsecret_token%3Ds-qCoVlkqBRGL&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            },
+            "name": "Name",
+            "birthdate": "Birthdate",
+            "age": "Age",
+            "months": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+            ],
+            "sex": "Sex",
+            "sex_options": {
+                "male": "Male",
+                "female": "Female"
+            },
+            "data_collection_agreement": "I agree to have my data collected for the purposes of this study\/research."
+        }
+    },
+    "Filipino": {
+        "language_code": "tl",
+        "field_names": {
+            "instructions": {
+                "text": "Isang maikling gabay na maaaring sagutan ng mga magulang tungkol sa kanilang mga anak (edad 18 - 24 na buwan) na hinihinalang may autism. Sa bawat tanong, piliin ang sagot na pinaka-angkop na naglalarawan sa iyong anak.",
+                "audio": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1405592152%3Fsecret_token%3Ds-0gYryrgayDC&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            },
+            "name": "Pangalan",
+            "birthdate": "Petsa ng Kaarawan",
+            "age": "Edad",
+            "months": [
+                "Enero",
+                "Pebrero",
+                "Marso",
+                "Abril",
+                "Mayo",
+                "Hunyo",
+                "Hulyo",
+                "Agosto",
+                "Setyembre",
+                "Oktubre",
+                "Nobyembre",
+                "Disyembre"
+            ],
+            "sex": "Kasarian",
+            "sex_options": {
+                "male": "Lalake",
+                "female:": "Babae"
+            },
+            "data_collection_agreement": "I agree to have my data collected for the purposes of this study\/research."
+        }
+    }
+}

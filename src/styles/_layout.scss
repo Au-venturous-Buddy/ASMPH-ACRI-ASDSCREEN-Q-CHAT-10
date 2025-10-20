@@ -1,0 +1,601 @@
+@mixin pillColor($background_color) {
+  background: $background_color;
+  border: none;
+}
+
+i {
+  font-style: italic;
+}
+
+div.main {
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+div.full-height {
+  min-height: 100vh;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    box-shadow: $shadowCenter;
+    footer {
+      display: flex;
+      position: relative;
+      bottom: 0;
+      height: 30px;
+      clear: both;
+      background-color: gray;
+      color: white;
+      justify-content: center;
+      width: 100%;
+  
+      span {
+        align-self: center;
+        text-align: center;
+      }
+    }
+}
+
+.bottom-row {
+  bottom: 0;
+  position: "fixed"; 
+  width: 100%;
+}
+
+.shadow,
+.hover-shadow:hover {
+  box-shadow: $shadow;
+}
+
+.hover-shadow-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $primaryColor;
+  background-color: white;
+  background-size: cover;
+}
+
+main, .modal {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  color: $primaryColor;
+}
+
+label {
+  display: block;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.card {
+  border: none;
+}
+
+.card-header {
+  background: $primaryColor;
+  border: none;
+  color: #fff;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.form-control {
+  border: none;
+}
+
+.btn,
+.btn:hover,
+.btn:focus {
+  background-color: $primaryColor;
+  color: white;
+  border: 2px solid $primaryColor;
+  border-radius: 0px;
+  --bs-btn-color: white;
+  --bs-btn-active-color: white;
+  --bs-btn-bg: $primaryColor;
+  --bs-btn-active-bg: $primaryColor;
+}
+
+.btn:hover {
+  box-shadow: $shadowImg;
+}
+
+.btn:disabled {
+  background-color: $secondaryColor;
+  color: white;
+  border: 2px solid $secondaryColor;
+  border-radius: 0px;
+  --bs-btn-disabled-bg: $secondaryColor;
+  --bs-btn-disabled-color: white;
+}
+
+.btn.secondary-color,
+.btn.secondary-color:hover,
+.btn.secondary-color:focus {
+  background-color: white;
+  color: $primaryColor;
+  border: 2px solid $primaryColor;
+  border-radius: 0px;
+  --bs-btn-color: $primaryColor;
+  --bs-btn-active-color: $primaryColor;
+  --bs-btn-bg: white;
+  --bs-btn-active-bg: white;
+}
+
+.btn.secondary-color:hover {
+  box-shadow: $shadowImg;
+}
+
+.btn.secondary-color:disabled {
+  background-color: white;
+  color: $secondaryColor;
+  border: 2px solid $secondaryColor;
+  border-radius: 0px;
+  --bs-btn-disabled-bg: white;
+  --bs-btn-disabled-color: $secondaryColor;
+}
+
+.img-button {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  padding: 0;
+}
+
+.img-button:hover {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: $shadowCenter;
+}
+
+.nav-item .btn, 
+.nav-item .btn-group {
+  height: 100%;
+}
+
+.hero-section {
+  background-color: white;
+  box-shadow: $shadowImg;
+  padding: 0.5in;
+  color: $primaryColor;
+  text-align: justify;
+  min-width: 3in;
+}
+
+.questionnaires-list {
+  margin: 0px !important;
+  padding: 0px !important;
+  justify-content: center;
+
+  .questionnaires-list-item .btn,
+  .questionnaires-list-item .btn:hover,
+  .questionnaires-list-item .btn:focus {
+    background-image: url("../images/BlackLeatherBackground.png");
+    background-color: $primaryColor;
+    background-size: cover;
+    background-position: center;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: none;
+    height: 4in;
+    width: 3in;
+    line-height: 100%;
+    border-radius: 3px;
+    justify-content: center;
+
+    .questionnaire-preview {
+      font-family: Arial, Helvetica, sans-serif;
+      background: white;
+      color: $primaryColor;
+      border-top: 20px solid #D9D9D9;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      box-shadow: $shadowCenter;
+
+      .questionnaire-preview-title {
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .questionnaires-list-item .btn:hover,
+  .questionnaires-list-item .btn:focus {
+    box-shadow: $shadowCenter;
+  }
+}
+
+.media-preview-image {
+  border-radius: 20%;
+  box-shadow: $shadowCenter;
+}
+
+.modal-content {
+  box-shadow: $shadowCenter;
+}
+
+ol.instructions-list li {
+  display: list-item;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+ul.bullet-points li {
+  list-style-type: circle;
+  display: list-item;
+  list-style-position: inside;
+}
+
+.view {
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+.view .mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.center-image {
+  text-align: center;
+  justify-content: center;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  text-align: center;
+  color: $primaryColor;
+}
+
+.radio-button,
+.radio-button:focus,
+.radio-button:hover {
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  color: $primaryColor;
+  border-radius: 0px;
+  --bs-btn-active-color: $primaryColor;
+  --bs-btn-active-bg: rgba(0, 0, 0, 0);
+}
+
+.settings-section,
+.settings-section-button,
+.settings-section-button:hover,
+.settings-section-button:focus {
+  border: 2px solid $primaryColor;
+  background: white;
+  color: $primaryColor;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0px;
+}
+
+.language-selector-base {
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 2px solid $primaryColor;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px;
+  color: $primaryColor;
+}
+
+.settings-section {
+  width: 4in;
+  box-shadow: $shadowImg;
+
+  .popover-arrow {
+    display: none;
+  }
+}
+
+.settings-section-button:hover,
+.settings-section-button:focus {
+  box-shadow: $shadowImg;
+  background: $primaryColor;
+  color: white;
+  --bs-btn-active-bg: $primaryColor;
+  --bs-btn-active-color: white;
+}
+
+.react-datepicker {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $primaryColor;
+
+  .react-datepicker__header {
+    background-color: white;
+
+    .btn, 
+    .form-select {
+      background-color: rgba(0, 0, 0, 0);
+      color: $primaryColor;
+      border-radius: 0px;
+      border: none;
+    }
+
+    .btn {
+      background: rgba(0, 0, 0, 0);
+    }
+
+    .btn:hover,
+    .btn:focus,
+    .form-select:hover,
+    .form-select:focus {
+      box-shadow: $shadowImg;
+    }
+
+    .form-select:hover,
+    .form-select:focus {
+      cursor: auto;
+    }
+  }
+
+  .react-datepicker__day {
+    border: 2px solid white;
+    color: $primaryColor;
+  }
+
+  .react-datepicker__day-name {
+    color: $primaryColor;
+  }
+  
+  .react-datepicker__day--selected,
+  .react-datepicker__day--keyboard-selected {
+    border-radius: 50%;
+    border: 2px solid $primaryColor;
+    background: white;
+    color: $primaryColor;
+  }
+  
+  .react-datepicker__day--selected:hover,
+  .react-datepicker__day--keyboard-selected:hover,
+  .react-datepicker__day:hover {
+    border-radius: 50%;
+    border: 2px solid $primaryColor;
+    background: white;
+    color: $primaryColor;
+    cursor: auto;
+  }
+}
+
+.react-datepicker__input-container {
+  input {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    font-size: 18px;
+    border-bottom: 2px solid $primaryColor;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    width: 100%;
+    color: $primaryColor;
+    cursor: auto;
+  }
+
+  input:disabled {
+    background-color: #e9ecef;
+  }
+}
+
+.questionnaire-main {
+  background-image: url("../images/BlackLeatherBackground.png");
+  background-color: black;
+  background-size: 90%;
+  background-position: center;
+  min-width: 5in;
+  min-height: 12.8in;
+  margin-top: 30px;
+  padding-top: 0px;
+  padding-bottom: 70px;
+  border-radius: 3px;
+  box-shadow: $shadowCenter;
+}
+
+.questionnaire-contents,
+.questionnaire-contents-modal {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  padding: 0.5in;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 0px;
+  margin-bottom: 70px;
+  min-height: 11.7in;
+  min-width: 4.15in;
+  color: $primaryColor;
+  box-shadow: $shadowCenter;
+  border-top: 40px solid #D9D9D9;
+  border-radius: 0px;
+
+  ul, ol {
+    padding-left: 0px;
+  }
+
+  .radio-button,
+  .radio-button:focus,
+  .radio-button:hover {
+    color: $primaryColor;
+    text-align: justify;
+    box-shadow: none;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .radio-button:hover {
+    box-shadow: $shadowImg;
+  }
+
+  .radio-button.btn:disabled {
+    background-color: white;
+    color: $primaryColor;
+    border: 2px solid white;
+    border-radius: 0px;
+    --bs-btn-disabled-bg: white;
+    --bs-btn-disabled-color: $primaryColor;
+  }
+
+  .input-group-text {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: $primaryColor;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .text-input,
+  .text-input:hover,
+  .text-input:focus,
+  .text-input input:disabled {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid $primaryColor;
+    border-radius: 0px;
+    color: $primaryColor;
+    cursor: auto;
+
+    option:hover {
+      cursor: auto;
+    }
+
+    option {
+      letter-spacing: normal;
+    }
+  }
+
+  .text-input#language-selector {
+    background-color: white;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3E%3C/svg%3E");
+    background-position: right 0.75rem center;
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+  }
+
+  .result-comment {
+    border: 2px solid $primaryColor;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    font-size: 18px;
+  }
+}
+
+.questionnaire-contents-modal {
+  padding: 0.25in;
+}
+
+.question-item-thumbnail,
+.question-item-thumbnail:hover {
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  color: $primaryColor;
+  border-radius: 0px;
+  height: 100%;
+  line-height: 100%;
+  width: 100%;
+  border: none;
+
+  ul {
+    padding-left: 0px;
+  }
+
+  button:hover {
+    background: white;
+  }
+}
+
+.question-item-thumbnail:hover {
+  box-shadow: $shadowImg;
+
+  button:hover {
+    background: white;
+  }
+}
+
+.audio-player {
+  box-shadow: $shadowCenter;
+  height: 315px;
+  width: 240px;
+  background-color: #9ACD32;
+  padding: 10px;
+
+  .popover-arrow {
+    display: none;
+  }
+
+  .popover-body {
+    overflow-x: scroll;
+    background: #DBDBDB;
+
+    iframe {
+      height: 140px;
+      width: 550px;
+    }
+  }
+}
+
+.main-background {
+  background: #DBDBDB;
+  background-size: 90%;
+  background-position: center;
+  border-top: 3px solid gray;
+  border-bottom: 3px solid gray;
+  box-shadow: $shadowCenter;
+  overflow-x: scroll;
+}
+
+.offcanvas-bottom {
+  --bs-offcanvas-height: 50vh;
+}
+
+.show-audio-button,
+.show-audio-button:hover,
+.show-audio-button:focus {
+  border: 2px solid $primaryColor; 
+  border-radius: 0px; 
+}
+
+.show-audio-button:hover,
+.show-audio-button:focus {
+  box-shadow: $shadowImg;
+}

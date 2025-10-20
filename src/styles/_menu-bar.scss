@@ -1,0 +1,64 @@
+@mixin pillColor($background_color) {
+  background: $background_color;
+  border: none;
+}
+
+.page-navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.main-navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+}
+
+#menu-bar {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-bar .navbar-nav {
+  background: $primaryColorTransparent;
+  border-radius: 10px;
+  box-shadow: $shadowCenter;
+}
+
+
+#menu-bar .navbar-nav .nav-item button {
+  background-color: $secondaryColor;
+}
+
+#menu-bar .navbar-nav .nav-item button:hover {
+  box-shadow: $shadowCenter;
+  background-color: $secondaryColor;
+}
+
+.page-link {
+  @include pillColor($primaryColor);
+  color: #FFFFFF;
+}
+
+.page-link:hover {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), $primaryColor;
+  box-shadow: $shadow;
+  color: #FFFFFF;
+}
+
+.page-link.current-page-link {
+  @include pillColor($secondaryColor);
+
+  .menu-item-text {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+  }
+}
+
+.page-link.current-page-link:hover {
+  @include pillColor((linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), $secondaryColor));
+  box-shadow: $shadow;
+  color: #FFFFFF;
+}

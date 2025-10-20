@@ -1,0 +1,10 @@
+{
+    "English": {
+        "question": "Question",
+        "choices_intro": "Please choose one"
+    },
+    "Filipino": {
+        "question": "Tanong",
+        "choices_intro": "Piliin ng isa"
+    }
+}

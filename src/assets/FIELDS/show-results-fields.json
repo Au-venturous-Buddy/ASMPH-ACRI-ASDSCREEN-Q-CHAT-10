@@ -1,0 +1,38 @@
+{
+    "English": {
+        "language_code": "en",
+        "field_names": {
+            "number_of_failed_items": "Number of Failed Items",
+            "what_it_means": "What it Means",
+            "comment": {
+                "low_risk": {
+                    "text": "Score indicates LOW-RISK. If your child is younger than 24 months, screen again after second birthday. No further action required.  You should still consult with your doctor or pediatrician if you have concerns regarding your child's development and behavior.",
+                    "audio": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1405592764%3Fsecret_token%3Ds-csX17Up5YgT&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                },
+                "high_risk": {
+                    "text": "Score indicates HIGH RISK. Bring your child to a developmental pediatrician for assessment and early intervention.",
+                    "audio": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1405592782%3Fsecret_token%3Ds-toxBNVRSf5F&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                }
+            },
+            "results_summary": "Results Summary"
+        }
+    },
+    "Filipino": {
+        "language_code": "tl",
+        "field_names": {
+            "number_of_failed_items": "Bilang ng mga Bagsak",
+            "what_it_means": "Anong ibig Sabihin",
+            "comment": {
+                "low_risk": {
+                    "text": "Ang score na ito ay nangangahulugan ng LOW RISK. Kung ang iyong anak ay mas bata sa 24 months, magpascreen muli pagpatak ng dalawang taong gulang. Walang ibang kailangan gawin.  Maari kayong kumonsulta sa inyong doktor or pediatrician kung mayroon kayong alalahanin sa kanyang development o behavior.",
+                    "audio": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1405592746%3Fsecret_token%3Ds-jvkskeSnXqE&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                },
+                "high_risk": {
+                    "text": "Ang score na ito ay nangangahulugan ng HIGH RISK. Dalhin ang inyong anak sa isang developmental pediatrician para sumailalim sa isang developmental assessment at magsimula ng therapy sessions kung kinakailangan.",
+                    "audio": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1405592776%3Fsecret_token%3Ds-4ziPJRO6AO3&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                }
+            },
+            "results_summary": "Buod ng mga Resulta"
+        }
+    }
+}

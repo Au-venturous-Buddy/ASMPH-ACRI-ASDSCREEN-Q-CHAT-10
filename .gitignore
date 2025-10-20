@@ -1,0 +1,8 @@
+node_modules
+.DS_Store
+.cache
+public/favicon.ico
+public
+src/.DS_Store
+keys.json
+.env
