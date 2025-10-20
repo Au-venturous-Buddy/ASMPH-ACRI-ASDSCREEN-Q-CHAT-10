@@ -45,7 +45,7 @@ export default class QCHATMain extends React.Component {
 export const query = graphql`
 query {
   allFile(
-    filter: {relativeDirectory: {regex: "/assets.*/"}}
+    filter: {relativeDirectory: {regex: "/assets/*/"}}
     sort: {relativePath: ASC}
   ) {
     edges {
