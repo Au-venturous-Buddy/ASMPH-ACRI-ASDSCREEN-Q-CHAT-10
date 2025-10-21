@@ -43,7 +43,7 @@ export default function SettingsWindow(props) {
             <section className="d-grid gap-2">
               <Button className="settings-section-button" hidden={props.hideClearAnswersButton} onClick={props.clearSelectedItems}><BsEraserFill aria-hidden /> Clear Answers</Button>
               <Button className="settings-section-button" onClick={props.restartTest}><FaUndoAlt aria-hidden /> Restart Test</Button>
-              <Button className="settings-section-button" href="/"><ImExit aria-hidden /> Quit Test</Button>
+              <Button className="settings-section-button" href="https://au-venturous-buddy.github.io/au-venturous-buddy-website/asdscreen/"><ImExit aria-hidden /> Quit Test</Button>
             </section>
           </section>
         </Popover.Body>
