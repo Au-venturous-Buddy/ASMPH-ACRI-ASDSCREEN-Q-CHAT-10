@@ -212,7 +212,7 @@ export default function ShowResultMain(props) {
                 (
                   <>
                     <Button style={{fontSize: ResponsiveSize(0.8, "rem", 0.001, 500)}} onClick={props.restartTestMain}>Restart Test</Button>
-                    <Button className="secondary-color ms-2" style={{fontSize: ResponsiveSize(0.8, "rem", 0.001, 500)}} href="/">Home Page</Button>
+                    <Button className="secondary-color ms-2" style={{fontSize: ResponsiveSize(0.8, "rem", 0.001, 500)}} href="https://au-venturous-buddy.github.io/au-venturous-buddy-website/asdscreen/">Home Page</Button>
                   </>
                 ) :
                 (
