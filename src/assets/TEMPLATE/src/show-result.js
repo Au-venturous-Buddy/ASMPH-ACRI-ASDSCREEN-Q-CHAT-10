@@ -1,8 +1,8 @@
 import React from "react"
-import showResultsFields from "../assets/FIELDS/show-results-fields.json";
-import questionFields from "../assets/FIELDS/question-fields.json";
-import ShowResultMain from "./show-result-main";
-import patientInfoFields from "../assets/FIELDS/patient-info-fields.json";
+import showResultsFields from "../../FIELDS/show-results-fields.json";
+import questionFields from "../../FIELDS/question-fields.json";
+import ShowResultMain from "../../../components/show-result-main";
+import patientInfoFields from "../../FIELDS/patient-info-fields.json";
 
 export default function ShowResult(props) {
   return(

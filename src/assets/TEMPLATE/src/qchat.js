@@ -1,7 +1,7 @@
 import React from "react"
-import Questionnaire from "./questionnaire";
+import Questionnaire from "../../../components/questionnaire";
 import ShowResult from "./show-result";
-import questionFields from "../assets/FIELDS/question-fields.json";
+import questionFields from "../../FIELDS/question-fields.json";
 
 export default function QCHATTest(props) {
   const getResult = (scores, state, items) => {

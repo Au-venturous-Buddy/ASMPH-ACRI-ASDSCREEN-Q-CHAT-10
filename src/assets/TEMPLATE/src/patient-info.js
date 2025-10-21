@@ -1,7 +1,7 @@
 import React from "react"
 import QCHATTest from "./qchat";
-import patientInfoFields from "../assets/FIELDS/patient-info-fields.json";
-import PatientInfoMain from "./patient-info-main"
+import patientInfoFields from "../../FIELDS/patient-info-fields.json";
+import PatientInfoMain from "../../../components/patient-info-main"
 
 export default function PatientInfo(props) {
   const submitPatientInfo = (patientInfo, currentLanguage) => {

@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import SetLanguageAudio from "../components/set-language-audio"
+import SetLanguageAudio from "../assets/TEMPLATE/src/set-language-audio"
 
 export default class QCHATMain extends React.Component {
   state = {
