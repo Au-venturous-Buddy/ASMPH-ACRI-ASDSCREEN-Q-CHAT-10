@@ -1,3 +1,5 @@
+@use "variables" as v;
+
 @mixin pillColor($background_color) {
   background: $background_color;
   border: none;
@@ -21,7 +23,7 @@ div.full-height {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    box-shadow: $shadowCenter;
+    box-shadow: v.$shadowCenter;
     footer {
       display: flex;
       position: relative;
@@ -48,7 +50,7 @@ div.full-height {
 
 .shadow,
 .hover-shadow:hover {
-  box-shadow: $shadow;
+  box-shadow: v.$shadow;
 }
 
 .hover-shadow-card:hover {
@@ -57,7 +59,7 @@ div.full-height {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: $primaryColor;
+  color: v.$primaryColor;
   background-color: white;
   background-size: cover;
 }
@@ -68,7 +70,7 @@ main, .modal {
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  color: $primaryColor;
+  color: v.$primaryColor;
 }
 
 label {
@@ -84,7 +86,7 @@ label {
 }
 
 .card-header {
-  background: $primaryColor;
+  background: v.$primaryColor;
   border: none;
   color: #fff;
 }
@@ -109,26 +111,26 @@ label {
 .btn,
 .btn:hover,
 .btn:focus {
-  background-color: $primaryColor;
+  background-color: v.$primaryColor;
   color: white;
-  border: 2px solid $primaryColor;
+  border: 2px solid v.$primaryColor;
   border-radius: 0px;
   --bs-btn-color: white;
   --bs-btn-active-color: white;
-  --bs-btn-bg: $primaryColor;
-  --bs-btn-active-bg: $primaryColor;
+  --bs-btn-bg: v.$primaryColor;
+  --bs-btn-active-bg: v.$primaryColor;
 }
 
 .btn:hover {
-  box-shadow: $shadowImg;
+  box-shadow: v.$shadowImg;
 }
 
 .btn:disabled {
-  background-color: $secondaryColor;
+  background-color: v.$secondaryColor;
   color: white;
-  border: 2px solid $secondaryColor;
+  border: 2px solid v.$secondaryColor;
   border-radius: 0px;
-  --bs-btn-disabled-bg: $secondaryColor;
+  --bs-btn-disabled-bg: v.$secondaryColor;
   --bs-btn-disabled-color: white;
 }
 
@@ -136,26 +138,26 @@ label {
 .btn.secondary-color:hover,
 .btn.secondary-color:focus {
   background-color: white;
-  color: $primaryColor;
-  border: 2px solid $primaryColor;
+  color: v.$primaryColor;
+  border: 2px solid v.$primaryColor;
   border-radius: 0px;
-  --bs-btn-color: $primaryColor;
-  --bs-btn-active-color: $primaryColor;
+  --bs-btn-color: v.$primaryColor;
+  --bs-btn-active-color: v.$primaryColor;
   --bs-btn-bg: white;
   --bs-btn-active-bg: white;
 }
 
 .btn.secondary-color:hover {
-  box-shadow: $shadowImg;
+  box-shadow: v.$shadowImg;
 }
 
 .btn.secondary-color:disabled {
   background-color: white;
-  color: $secondaryColor;
-  border: 2px solid $secondaryColor;
+  color: v.$secondaryColor;
+  border: 2px solid v.$secondaryColor;
   border-radius: 0px;
   --bs-btn-disabled-bg: white;
-  --bs-btn-disabled-color: $secondaryColor;
+  --bs-btn-disabled-color: v.$secondaryColor;
 }
 
 .img-button {
@@ -166,7 +168,7 @@ label {
 
 .img-button:hover {
   background: rgba(255, 255, 255, 0);
-  box-shadow: $shadowCenter;
+  box-shadow: v.$shadowCenter;
 }
 
 .nav-item .btn, 
@@ -176,9 +178,9 @@ label {
 
 .hero-section {
   background-color: white;
-  box-shadow: $shadowImg;
+  box-shadow: v.$shadowImg;
   padding: 0.5in;
-  color: $primaryColor;
+  color: v.$primaryColor;
   text-align: justify;
   min-width: 3in;
 }
@@ -192,7 +194,7 @@ label {
   .questionnaires-list-item .btn:hover,
   .questionnaires-list-item .btn:focus {
     background-image: url("../images/BlackLeatherBackground.png");
-    background-color: $primaryColor;
+    background-color: v.$primaryColor;
     background-size: cover;
     background-position: center;
     padding-top: 0px;
@@ -209,12 +211,12 @@ label {
     .questionnaire-preview {
       font-family: Arial, Helvetica, sans-serif;
       background: white;
-      color: $primaryColor;
+      color: v.$primaryColor;
       border-top: 20px solid #D9D9D9;
       height: 100%;
       width: 100%;
       margin: 0;
-      box-shadow: $shadowCenter;
+      box-shadow: v.$shadowCenter;
 
       .questionnaire-preview-title {
         position: relative;
@@ -227,17 +229,17 @@ label {
 
   .questionnaires-list-item .btn:hover,
   .questionnaires-list-item .btn:focus {
-    box-shadow: $shadowCenter;
+    box-shadow: v.$shadowCenter;
   }
 }
 
 .media-preview-image {
   border-radius: 20%;
-  box-shadow: $shadowCenter;
+  box-shadow: v.$shadowCenter;
 }
 
 .modal-content {
-  box-shadow: $shadowCenter;
+  box-shadow: v.$shadowCenter;
 }
 
 ol.instructions-list li {
@@ -279,7 +281,7 @@ ul.bullet-points li {
 .modal-body,
 .modal-footer {
   text-align: center;
-  color: $primaryColor;
+  color: v.$primaryColor;
 }
 
 .radio-button,
@@ -287,9 +289,9 @@ ul.bullet-points li {
 .radio-button:hover {
   border: none;
   background: rgba(0, 0, 0, 0);
-  color: $primaryColor;
+  color: v.$primaryColor;
   border-radius: 0px;
-  --bs-btn-active-color: $primaryColor;
+  --bs-btn-active-color: v.$primaryColor;
   --bs-btn-active-bg: rgba(0, 0, 0, 0);
 }
 
@@ -297,26 +299,26 @@ ul.bullet-points li {
 .settings-section-button,
 .settings-section-button:hover,
 .settings-section-button:focus {
-  border: 2px solid $primaryColor;
+  border: 2px solid v.$primaryColor;
   background: white;
-  color: $primaryColor;
+  color: v.$primaryColor;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 0px;
 }
 
 .language-selector-base {
   font-family: Arial, Helvetica, sans-serif;
-  border-bottom: 2px solid $primaryColor;
+  border-bottom: 2px solid v.$primaryColor;
   border-top: none;
   border-right: none;
   border-left: none;
   border-radius: 0px;
-  color: $primaryColor;
+  color: v.$primaryColor;
 }
 
 .settings-section {
   width: 4in;
-  box-shadow: $shadowImg;
+  box-shadow: v.$shadowImg;
 
   .popover-arrow {
     display: none;
@@ -325,16 +327,16 @@ ul.bullet-points li {
 
 .settings-section-button:hover,
 .settings-section-button:focus {
-  box-shadow: $shadowImg;
-  background: $primaryColor;
+  box-shadow: v.$shadowImg;
+  background: v.$primaryColor;
   color: white;
-  --bs-btn-active-bg: $primaryColor;
+  --bs-btn-active-bg: v.$primaryColor;
   --bs-btn-active-color: white;
 }
 
 .react-datepicker {
   font-family: Arial, Helvetica, sans-serif;
-  color: $primaryColor;
+  color: v.$primaryColor;
 
   .react-datepicker__header {
     background-color: white;
@@ -342,7 +344,7 @@ ul.bullet-points li {
     .btn, 
     .form-select {
       background-color: rgba(0, 0, 0, 0);
-      color: $primaryColor;
+      color: v.$primaryColor;
       border-radius: 0px;
       border: none;
     }
@@ -355,7 +357,7 @@ ul.bullet-points li {
     .btn:focus,
     .form-select:hover,
     .form-select:focus {
-      box-shadow: $shadowImg;
+      box-shadow: v.$shadowImg;
     }
 
     .form-select:hover,
@@ -366,28 +368,28 @@ ul.bullet-points li {
 
   .react-datepicker__day {
     border: 2px solid white;
-    color: $primaryColor;
+    color: v.$primaryColor;
   }
 
   .react-datepicker__day-name {
-    color: $primaryColor;
+    color: v.$primaryColor;
   }
   
   .react-datepicker__day--selected,
   .react-datepicker__day--keyboard-selected {
     border-radius: 50%;
-    border: 2px solid $primaryColor;
+    border: 2px solid v.$primaryColor;
     background: white;
-    color: $primaryColor;
+    color: v.$primaryColor;
   }
   
   .react-datepicker__day--selected:hover,
   .react-datepicker__day--keyboard-selected:hover,
   .react-datepicker__day:hover {
     border-radius: 50%;
-    border: 2px solid $primaryColor;
+    border: 2px solid v.$primaryColor;
     background: white;
-    color: $primaryColor;
+    color: v.$primaryColor;
     cursor: auto;
   }
 }
@@ -397,7 +399,7 @@ ul.bullet-points li {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: normal;
     font-size: 18px;
-    border-bottom: 2px solid $primaryColor;
+    border-bottom: 2px solid v.$primaryColor;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -405,7 +407,7 @@ ul.bullet-points li {
     padding-bottom: 7px;
     padding-left: 12px;
     width: 100%;
-    color: $primaryColor;
+    color: v.$primaryColor;
     cursor: auto;
   }
 
@@ -425,7 +427,7 @@ ul.bullet-points li {
   padding-top: 0px;
   padding-bottom: 70px;
   border-radius: 3px;
-  box-shadow: $shadowCenter;
+  box-shadow: v.$shadowCenter;
 }
 
 .questionnaire-contents,
@@ -440,8 +442,8 @@ ul.bullet-points li {
   margin-bottom: 70px;
   min-height: 11.7in;
   min-width: 4.15in;
-  color: $primaryColor;
-  box-shadow: $shadowCenter;
+  color: v.$primaryColor;
+  box-shadow: v.$shadowCenter;
   border-top: 40px solid #D9D9D9;
   border-radius: 0px;
 
@@ -452,7 +454,7 @@ ul.bullet-points li {
   .radio-button,
   .radio-button:focus,
   .radio-button:hover {
-    color: $primaryColor;
+    color: v.$primaryColor;
     text-align: justify;
     box-shadow: none;
     padding-left: 0px;
@@ -460,22 +462,22 @@ ul.bullet-points li {
   }
 
   .radio-button:hover {
-    box-shadow: $shadowImg;
+    box-shadow: v.$shadowImg;
   }
 
   .radio-button.btn:disabled {
     background-color: white;
-    color: $primaryColor;
+    color: v.$primaryColor;
     border: 2px solid white;
     border-radius: 0px;
     --bs-btn-disabled-bg: white;
-    --bs-btn-disabled-color: $primaryColor;
+    --bs-btn-disabled-color: v.$primaryColor;
   }
 
   .input-group-text {
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    color: $primaryColor;
+    color: v.$primaryColor;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -489,9 +491,9 @@ ul.bullet-points li {
     letter-spacing: normal;
     font-size: 18px;
     border: none;
-    border-bottom: 2px solid $primaryColor;
+    border-bottom: 2px solid v.$primaryColor;
     border-radius: 0px;
-    color: $primaryColor;
+    color: v.$primaryColor;
     cursor: auto;
 
     option:hover {
@@ -512,7 +514,7 @@ ul.bullet-points li {
   }
 
   .result-comment {
-    border: 2px solid $primaryColor;
+    border: 2px solid v.$primaryColor;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: normal;
     font-size: 18px;
@@ -528,7 +530,7 @@ ul.bullet-points li {
   background: white;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
-  color: $primaryColor;
+  color: v.$primaryColor;
   border-radius: 0px;
   height: 100%;
   line-height: 100%;
@@ -545,7 +547,7 @@ ul.bullet-points li {
 }
 
 .question-item-thumbnail:hover {
-  box-shadow: $shadowImg;
+  box-shadow: v.$shadowImg;
 
   button:hover {
     background: white;
@@ -553,7 +555,7 @@ ul.bullet-points li {
 }
 
 .audio-player {
-  box-shadow: $shadowCenter;
+  box-shadow: v.$shadowCenter;
   height: 315px;
   width: 240px;
   background-color: #9ACD32;
@@ -580,7 +582,7 @@ ul.bullet-points li {
   background-position: center;
   border-top: 3px solid gray;
   border-bottom: 3px solid gray;
-  box-shadow: $shadowCenter;
+  box-shadow: v.$shadowCenter;
   overflow-x: scroll;
 }
 
@@ -591,11 +593,11 @@ ul.bullet-points li {
 .show-audio-button,
 .show-audio-button:hover,
 .show-audio-button:focus {
-  border: 2px solid $primaryColor; 
+  border: 2px solid v.$primaryColor; 
   border-radius: 0px; 
 }
 
 .show-audio-button:hover,
 .show-audio-button:focus {
-  box-shadow: $shadowImg;
+  box-shadow: v.$shadowImg;
 }
