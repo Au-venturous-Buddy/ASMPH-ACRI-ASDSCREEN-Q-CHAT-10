@@ -1,3 +1,5 @@
+@use "variables" as v;
+
 @mixin pillColor($background_color) {
   background: $background_color;
   border: none;
@@ -22,34 +24,34 @@
 }
 
 #menu-bar .navbar-nav {
-  background: $primaryColorTransparent;
+  background: v.$primaryColorTransparent;
   border-radius: 10px;
-  box-shadow: $shadowCenter;
+  box-shadow: v.$shadowCenter;
 }
 
 
 #menu-bar .navbar-nav .nav-item button {
-  background-color: $secondaryColor;
+  background-color: v.$secondaryColor;
 }
 
 #menu-bar .navbar-nav .nav-item button:hover {
-  box-shadow: $shadowCenter;
-  background-color: $secondaryColor;
+  box-shadow: v.$shadowCenter;
+  background-color: v.$secondaryColor;
 }
 
 .page-link {
-  @include pillColor($primaryColor);
+  @include pillColor(v.$primaryColor);
   color: #FFFFFF;
 }
 
 .page-link:hover {
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), $primaryColor;
-  box-shadow: $shadow;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), v.$primaryColor;
+  box-shadow: v.$shadow;
   color: #FFFFFF;
 }
 
 .page-link.current-page-link {
-  @include pillColor($secondaryColor);
+  @include pillColor(v.$secondaryColor);
 
   .menu-item-text {
     text-decoration: underline;
@@ -58,7 +60,7 @@
 }
 
 .page-link.current-page-link:hover {
-  @include pillColor((linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), $secondaryColor));
-  box-shadow: $shadow;
+  @include pillColor((linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), v.$secondaryColor));
+  box-shadow: v.$shadow;
   color: #FFFFFF;
 }
